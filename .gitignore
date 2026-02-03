@@ -1,0 +1,34 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Android generic
+*.apk
+*.ap_
+*.dex
+*.class
+/bin/
+/gen/
+/out/
+.gradle/
+build/
+/app/build/
+
+# Kotlin / Jetbrains
+.kotlin/
+
+# Keystores
+*.jks
+*.keystore
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
