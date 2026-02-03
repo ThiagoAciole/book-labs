@@ -247,6 +247,7 @@ fun ReaderScreen(
                             PdfReaderContainer(
                                 bookId = comicUri.hashCode().toString(),
                                 chapters = uiState.bookChapters,
+                                cachedSpannedChapters = uiState.cachedSpannedChapters,
                                 fontSize = uiState.fontSize,
                                 initialPage = uiState.currentPage,
                                 textColor = textColor,

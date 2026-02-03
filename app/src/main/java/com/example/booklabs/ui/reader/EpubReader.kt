@@ -23,7 +23,6 @@ import com.example.booklabs.data.repository.TextHighlight
 import com.example.booklabs.data.repository.TextHighlightRepository
 
 @Composable
-@Composable
 fun EpubReaderContainer(
     bookId: String,
     chapters: List<String>,

@@ -2,12 +2,13 @@ package com.example.booklabs.ui.reader
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
-import com.example.booklabs.util.TextHighlight
+import com.example.booklabs.data.repository.TextHighlight
 
 @Composable
 fun PdfReaderContainer(
     bookId: String,
     chapters: List<String>,
+    cachedSpannedChapters: Map<Int, android.text.Spanned>,
     fontSize: Float,
     initialPage: Int,
     textColor: Color,
@@ -21,6 +22,7 @@ fun PdfReaderContainer(
     // PDF extraído como texto também segue a lógica simples de scroll vertical
     SimpleTextReader(
         chapters = chapters,
+        cachedSpannedChapters = cachedSpannedChapters,
         fontSize = fontSize,
         textColor = textColor,
         initialPage = initialPage,

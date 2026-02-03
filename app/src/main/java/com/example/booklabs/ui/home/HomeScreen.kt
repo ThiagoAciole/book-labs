@@ -50,8 +50,9 @@ import com.example.booklabs.ui.theme.Purple
 import com.example.booklabs.ui.theme.PurpleLight
 import com.example.booklabs.ui.theme.Surface
 import com.example.booklabs.ui.theme.TextSecondary
-import com.example.booklabs.util.ContentLoader
-import com.example.booklabs.util.FavoritesRepository
+import com.example.booklabs.data.ContentLoader
+import com.example.booklabs.data.repository.FavoritesRepository
+import com.example.booklabs.data.repository.ReadingProgressRepository
 import com.example.booklabs.util.StorageManager
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
