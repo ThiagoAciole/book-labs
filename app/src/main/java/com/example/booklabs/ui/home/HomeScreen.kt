@@ -106,7 +106,7 @@ fun HomeScreen(
     // Init Favorites & Progress
     LaunchedEffect(Unit) {
         FavoritesRepository.init(context)
-        com.example.booklabs.util.ReadingProgressRepository.init(context)
+        com.example.booklabs.data.repository.ReadingProgressRepository.init(context)
     }
 
     // State
@@ -666,9 +666,10 @@ fun HomeScreen(
                             }
                             
                             // Update Reading Progress if necessary
-                            val progress = com.example.booklabs.util.ReadingProgressRepository.getProgress(currentFile.absolutePath)
+
+                            val progress = com.example.booklabs.data.repository.ReadingProgressRepository.getProgress(currentFile.absolutePath)
                             if (progress > 0) {
-                                com.example.booklabs.util.ReadingProgressRepository.saveProgress(newFile.absolutePath, progress)
+                                com.example.booklabs.data.repository.ReadingProgressRepository.saveProgress(newFile.absolutePath, progress)
                             }
                             
                             loadFiles()
